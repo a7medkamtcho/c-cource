@@ -14,11 +14,11 @@ int main()
 	cout<<"1=yes"<<endl;
 	cout<<"2=no"<<endl;
 	cin>>stop;	 //get the answer and put it in the stop integar
-	if (stop = 1) //then the user want to start the stop watch
+	if (stop == 1) //then the user want to start the stop watch
 	{
 	stopwatch(); //it`s the stopwatch funcion
 	}
-	else if (stop = 2);//then the user don`t want to start the stop watch then i will make a loops to clear the last date and rewrite the new data time
+	else if (stop == 2);//then the user don`t want to start the stop watch then i will make a loops to clear the last date and rewrite the new data time
 	{
 		for (;;)   //it`s unlimte loops to replay the time if thare new
 		{
