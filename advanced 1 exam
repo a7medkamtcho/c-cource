@@ -1,0 +1,44 @@
+#include <iostream>
+#include <cstdio>
+#include <string>
+#include <conio.h>
+
+using namespace std;
+
+int main ()
+{
+	char x[] = "";
+	char ch;
+	//char *ch =&ch;
+	int number;
+	int letter;
+	number = 0;
+	letter = 0;
+	int space;
+	space = 1;
+	int i;
+	for (i = 0; (ch = getche()) != '\r'; i++)
+	{
+	x[i] = ch;
+	
+	if (ch == '0' || ch == '2' || ch == '1' || ch == '3' || ch == '4' || ch == '5' || ch == '6' || ch == '7' || ch == '8' || ch == '9')
+	{
+		number++;
+	}
+	else if (ch == ' ')
+	{
+		space++;
+	}
+	else
+	{
+        letter++;
+	}
+	}
+	system ("cls");
+	cout<<"count number is "<<number<<endl<<"count letter is "<<letter<<endl<<"words is "<<space<<endl;
+	system ("pause");
+}
+
+
+//السنجل كوتيشن مارك '' بتستحمل حرف واحد او رقم واحد و ده بتستخدم فى المتغير char
+//الدبول كوتيشن مارك "" بتستخدم فى انك تكتب فيها مجموعه كلمات و ده بتستخدم فى المتغير string
